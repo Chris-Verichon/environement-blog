@@ -1,5 +1,6 @@
 <?php
 require_once '../vendor/autoload.php';
+require_once '../app/Utils/functions.inc.php';
 // création de l'objet router
 // Cet objet va gérer les routes pour nous
 $router = new AltoRouter();
@@ -34,6 +35,15 @@ $router->map(
         'controller' => '\App\Controllers\MainController'
     ],
     'main-home'
+);
+$router->map(
+    'GET',
+    '/article/[i:id]',
+    [
+        'method' => 'article',
+        'controller' => '\App\Controllers\ArticleController'
+    ],
+    'article-article'
 );
 
 /* -------------

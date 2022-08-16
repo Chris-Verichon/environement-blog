@@ -116,4 +116,22 @@ class Post extends CoreModel
 
         return $results;
     }
+
+    /**
+     * Method find 1 post
+     *
+     * @return Post[]
+     */
+    public function findCurrentArticle($articleId)
+    {
+        $pdo = Database::getPDO();
+
+        $sql = "SELECT * FROM `post` WHERE `id` = $articleId";
+        
+        $pdoStatement = $pdo->query($sql);
+
+        $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
+
+        return $results;
+    }
 }
