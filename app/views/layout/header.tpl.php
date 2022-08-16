@@ -11,6 +11,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <!-- Style -->
   <link rel="stylesheet" href="<?= $assetsBaseUri ?>/css/style.css">
-  <title>Environement-Blog</title>
+  <title>Environement-Blog - <?= $pageTitle?></title>
 </head>
 <body>

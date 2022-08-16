@@ -2,8 +2,7 @@
 
 namespace App\Models;
 
-// Classe mère de tous les Models
-// On centralise ici toutes les propriétés et méthodes utiles pour TOUS les Models
+// Class primary of all model 
 class CoreModel {
     /**
      * @var int

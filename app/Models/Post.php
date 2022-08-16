@@ -98,4 +98,22 @@ class Post extends CoreModel
 
         return $this;
     }
+
+    /**
+     * Method find 5 post
+     *
+     * @return Post[]
+     */
+    public static function findForHome()
+    {
+        $pdo = Database::getPDO();
+
+        $sql = "SELECT * FROM `post` ORDER BY `updated_at` DESC, `created_at` DESC LIMIT 5";
+        
+        $pdoStatement = $pdo->query($sql);
+
+        $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
+
+        return $results;
+    }
 }

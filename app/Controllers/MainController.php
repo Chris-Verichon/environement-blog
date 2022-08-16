@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Post;
+
 
 class MainController extends CoreController {
 
@@ -12,6 +14,9 @@ class MainController extends CoreController {
      */
     public function home()
     {
-        $this->show('main/home');
+        $this->show('main/home', [
+            'pageTitle' => 'Bienvenue',
+            'postList' => Post::findForHome(),
+        ]);
     }
 }
