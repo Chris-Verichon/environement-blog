@@ -59,6 +59,10 @@ header p {
   font-weight: 300;
 }
 
+article.card-title a{
+  color: #275001;
+}
+
 /* ici on a créé un peu d'espace, l'unité est le "em" pour que ça dépende de la font-size du parent (que ce soit relatif) */
 article.card {
   margin: 2em 0;
@@ -69,6 +73,7 @@ article.card {
 article h2 {
   font-size: 30px;
   font-weight: 800;
+  color: #275001;
 }
 
 article p.card-text {
@@ -188,7 +193,7 @@ footer .links a:hover {
   }
 
   .card a {
-    color: black;
+    color: #275001;
   }
 
   .card-categories a {

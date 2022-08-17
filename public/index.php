@@ -45,6 +45,15 @@ $router->map(
     ],
     'article-article'
 );
+$router->map(
+    'GET',
+    '/categorie/[i:name]',
+    [
+        'method' => 'category',
+        'controller' => `\app\Controllers\CategoryController`
+    ],
+    'category-category'
+);
 
 /* -------------
 --- DISPATCH ---
