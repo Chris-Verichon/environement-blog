@@ -11,13 +11,13 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
       <!-- Style -->
       <link rel="stylesheet" href="<?= $assetsBaseUri ?>/css/style.css">
-      <title>Environement-Blog - <?= $pageTitle?></title>
+      <title>Environnement-Blog - <?= $pageTitle?></title>
     </head>
     <body>
       <header>
           <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">  
-            <a class="navbar-brand" href="<?= $router->generate('main-home') ?>">Environement-Blog</a>
+            <a class="navbar-brand" href="<?= $router->generate('main-home') ?>">Environnement-Blog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,10 +33,10 @@
           </div> 
         </nav>
           <section class="text-center">
-            <h1>Environement-Blog</h1>
+            <h1>Environnement-Blog</h1>
             <hr />
             <p>
-              Un blog collaboratif de personnes sensibles à l'environement qui souhaitent partager des Bonnes pratiques, des innovations ou tout simplement témoigner.
+              Un blog collaboratif de personnes sensibles à l'environnement qui souhaitent partager des Bonnes pratiques, des innovations ou tout simplement témoigner.
             </p>
           </section>
         </header>
