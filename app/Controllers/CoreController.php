@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Category;
+
 class CoreController {
     /**
      * Méthode permettant d'afficher du code HTML en se basant sur les views
@@ -25,6 +27,8 @@ class CoreController {
         // définir l'url absolue pour la racine du site
         // /!\ != racine projet, ici on parle du répertoire public/
         $viewVars['baseUri'] = $_SERVER['BASE_URI'];
+
+        $viewVars['categoryList'] = Category::findAll();
 
         // On veut désormais accéder aux données de $viewVars, mais sans accéder au tableau
         // La fonction extract permet de créer une variable pour chaque élément du tableau passé en argument

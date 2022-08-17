@@ -23,15 +23,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav ">
+                <?php foreach( $categoryList as $category ) :?>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?= $baseUri ?>/article/categorie/Bonnes-pratiques">Bonnes-pratiques</a>
+                  <a class="nav-link" href="<?= $baseUri ?>/article/categorie/<?= $category->getId() ?>"><?= $category->getName() ?></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?= $baseUri ?>/article/categorie/Témoignages">Témoignages</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?= $baseUri ?>/article/categorie/Innovations">Innovations</a>
-                </li>
+                <?php endforeach ?>
               </ul>
             </div>
           </div> 

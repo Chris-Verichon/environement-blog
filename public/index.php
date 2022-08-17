@@ -50,7 +50,7 @@ $router->map(
     '/article/categorie/[i:id]',
     [
         'method' => 'category',
-        'controller' => '\App\Controllers\ArticleController'
+        'controller' => '\App\Controllers\CategoryController'
     ],
     'category-article'
 );
