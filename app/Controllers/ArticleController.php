@@ -8,7 +8,7 @@ use App\Models\Post;
 class ArticleController extends CoreController {
 
     /**
-     * Méthode s'occupant de la page d'accueil
+     * Method for Article
      *
      * @return void
      */
@@ -21,6 +21,16 @@ class ArticleController extends CoreController {
         $this->show('articles/article', [
             'pageTitle' => 'Article',
             'postItem' => $currentArticle[0],
+        ]);
+    }
+
+    public function category($params)
+    {
+
+        dump($params);
+
+        $this->show('category/articleListCategory', [
+            'pageTitle' => 'Category',
         ]);
     }
 }

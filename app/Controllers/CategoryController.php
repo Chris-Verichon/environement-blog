@@ -5,16 +5,17 @@ namespace App\Controllers;
 use App\Models\Post;
 
 
-class ArticleController extends CoreController {
+class CategoryController extends CoreController {
 
     /**
-     * Méthode s'occupant de la page d'accueil
+     * Method for category
      *
      * @return void
      */
     public function category()
     {
-        $this->show('articles/article', [
+
+        $this->show('category/articleListCategory', [
             'pageTitle' => 'Category',
         ]);
     }

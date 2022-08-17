@@ -47,12 +47,12 @@ $router->map(
 );
 $router->map(
     'GET',
-    '/categorie/[i:name]',
+    '/article/categorie/[i:id]',
     [
         'method' => 'category',
-        'controller' => `\app\Controllers\CategoryController`
+        'controller' => '\App\Controllers\ArticleController'
     ],
-    'category-category'
+    'category-article'
 );
 
 /* -------------
